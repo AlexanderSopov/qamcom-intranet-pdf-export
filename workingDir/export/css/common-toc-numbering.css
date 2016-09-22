@@ -1,0 +1,38 @@
+ul.toc {
+    counter-reset: li1;
+}
+
+ul.toc > li > p > a:before {
+    content: counter(li1) " ";
+    counter-increment: li1;
+    display: inline-block;
+    min-width: 5mm;
+}
+
+ul.toc > li > ul {
+    counter-reset: li2;
+}
+
+ul.toc > li > ul > li > p > a:before {
+    content: counter(li1) "." counter(li2) " ";
+    counter-increment: li2;
+    display: inline-block;
+    min-width: 8mm;
+    padding-left: 2mm;
+}
+
+ul.toc > li > ul > li > ul {
+    counter-reset: li3;
+}
+
+ul.toc > li > ul > li > ul > li > p > a:before {
+    content: counter(li1) "." counter(li2) "." counter(li3) " ";
+    counter-increment: li3;
+    display: inline-block;
+    min-width: 11mm;
+    padding-left: 4mm;
+}
+
+ul.toc > li > ul > li > ul > li > ul {
+    display: none;
+}

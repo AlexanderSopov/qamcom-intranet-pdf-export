@@ -1,0 +1,210 @@
+<repository lastmodified='20160811043209.364'>
+  <resource id='com.k15t.js.aui-ng/0.8.3' symbolicname='com.k15t.js.aui-ng' presentationname='Angular JS integration for AUI (AUI-NG)' uri='dependencies/aui-ng-0.8.3.jar' version='0.8.3'>
+    <description>Do NOT deactivate or uninstall this plugin unless you know what you are doing.         It provides shared libraries for user interfaces of other plugins that will stop working without this plugin.        Click &apos;Configure&apos; to get a list of plugins depending on the AUI-NG plugin.</description>
+    <size>335339</size>
+    <documentation>http://www.k15t.com/</documentation>
+    <capability name='bundle'>
+      <p n='symbolicname' v='com.k15t.js.aui-ng'/>
+      <p n='presentationname' v='Angular JS integration for AUI (AUI-NG)'/>
+      <p n='version' t='version' v='0.8.3'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.k15t.js.angular'/>
+      <p n='version' t='version' v='0.8.3'/>
+      <p n='uses:' v='org.dom4j,com.atlassian.plugin.elements,com.atlassian.plugin.servlet,com.atlassian.plugin.webresource.transformer'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.k15t.js.auing.web'/>
+      <p n='version' t='version' v='0.8.3'/>
+      <p n='uses:' v='javax.servlet,org.apache.commons.collections,com.atlassian.templaterenderer,com.atlassian.plugin.webresource,com.atlassian.plugin,javax.servlet.http'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=com.atlassian.plugin))' extend='false' multiple='false' optional='false'>Import package com.atlassian.plugin</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.plugin.elements))' extend='false' multiple='false' optional='false'>Import package com.atlassian.plugin.elements</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.plugin.servlet))' extend='false' multiple='false' optional='false'>Import package com.atlassian.plugin.servlet</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.plugin.webresource))' extend='false' multiple='false' optional='false'>Import package com.atlassian.plugin.webresource</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.plugin.webresource.transformer))' extend='false' multiple='false' optional='false'>Import package com.atlassian.plugin.webresource.transformer</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.templaterenderer))' extend='false' multiple='false' optional='false'>Import package com.atlassian.templaterenderer</require>
+    <require name='package' filter='(&amp;(package=javax.servlet))' extend='false' multiple='false' optional='false'>Import package javax.servlet</require>
+    <require name='package' filter='(&amp;(package=javax.servlet.http))' extend='false' multiple='false' optional='false'>Import package javax.servlet.http</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.collections))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.collections</require>
+    <require name='package' filter='(&amp;(package=org.dom4j))' extend='false' multiple='false' optional='false'>Import package org.dom4j</require>
+  </resource>
+  <resource id='com.k15t.scroll.pdf/3.4.5' symbolicname='com.k15t.scroll.pdf' presentationname='Scroll PDF Exporter' uri='scroll-pdf-3.4.5.jar' version='3.4.5'>
+    <description>The Scroll PDF Exporter exports content from Confluence pages to styled PDF documents.</description>
+    <size>6261582</size>
+    <documentation>http://www.k15t.com/</documentation>
+    <capability name='bundle'>
+      <p n='symbolicname' v='com.k15t.scroll.pdf'/>
+      <p n='presentationname' v='Scroll PDF Exporter'/>
+      <p n='version' t='version' v='3.4.5'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=com.atlassian.bandana))' extend='false' multiple='false' optional='false'>Import package com.atlassian.bandana</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.config))' extend='false' multiple='false' optional='false'>Import package com.atlassian.config</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.config.lifecycle.events))' extend='false' multiple='false' optional='false'>Import package com.atlassian.config.lifecycle.events</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.content.render.xhtml))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.content.render.xhtml</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.content.render.xhtml.definition))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.content.render.xhtml.definition</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.content.render.xhtml.transformers))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.content.render.xhtml.transformers</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.core))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.core</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.core.persistence))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.core.persistence</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.event.events.content.page))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.event.events.content.page</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.importexport.resource))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.importexport.resource</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.labels))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.labels</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.languages))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.languages</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.links.linktypes))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.links.linktypes</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.macro))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.macro</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.macro.xhtml))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.macro.xhtml</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.pages))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.pages</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.pages.persistence.dao))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.pages.persistence.dao</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.plugin))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.plugin</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.plugin.descriptor.web))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.plugin.descriptor.web</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.plugin.descriptor.web.conditions))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.plugin.descriptor.web.conditions</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.renderer))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.renderer</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.renderer.radeox.macros))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.renderer.radeox.macros</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.search.summary))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.search.summary</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.security))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.security</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.security.trust))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.security.trust</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.setup.bandana))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.setup.bandana</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.setup.settings))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.setup.settings</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.spaces))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.spaces</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.spaces.actions))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.spaces.actions</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.themes))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.themes</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.user))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.user</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.util))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.util</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.util.http))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.util.http</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.util.http.httpclient))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.util.http.httpclient</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.util.i18n))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.util.i18n</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.util.logging))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.util.logging</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.util.velocity))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.util.velocity</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.velocity.htmlsafe))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.velocity.htmlsafe</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.web.context))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.web.context</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.confluence.xhtml.api))' extend='false' multiple='false' optional='false'>Import package com.atlassian.confluence.xhtml.api</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.core.filters))' extend='false' multiple='false' optional='false'>Import package com.atlassian.core.filters</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.event.api))' extend='false' multiple='false' optional='false'>Import package com.atlassian.event.api</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.license))' extend='false' multiple='false' optional='false'>Import package com.atlassian.license</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.plugin))' extend='false' multiple='false' optional='false'>Import package com.atlassian.plugin</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.plugin.descriptors))' extend='false' multiple='false' optional='false'>Import package com.atlassian.plugin.descriptors</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.plugin.elements))' extend='false' multiple='false' optional='false'>Import package com.atlassian.plugin.elements</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.plugin.event.events))' extend='false' multiple='false' optional='false'>Import package com.atlassian.plugin.event.events</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.plugin.impl))' extend='false' multiple='false' optional='false'>Import package com.atlassian.plugin.impl</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.plugin.metadata))' extend='false' multiple='false' optional='false'>Import package com.atlassian.plugin.metadata</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.plugin.module))' extend='false' multiple='false' optional='false'>Import package com.atlassian.plugin.module</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.plugin.osgi.factory))' extend='false' multiple='false' optional='false'>Import package com.atlassian.plugin.osgi.factory</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.plugin.predicate))' extend='false' multiple='false' optional='false'>Import package com.atlassian.plugin.predicate</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.plugin.servlet))' extend='false' multiple='false' optional='false'>Import package com.atlassian.plugin.servlet</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.plugin.util))' extend='false' multiple='false' optional='false'>Import package com.atlassian.plugin.util</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.plugin.web.descriptors))' extend='false' multiple='false' optional='false'>Import package com.atlassian.plugin.web.descriptors</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.plugin.webresource))' extend='false' multiple='false' optional='false'>Import package com.atlassian.plugin.webresource</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.plugin.webresource.transformer))' extend='false' multiple='false' optional='false'>Import package com.atlassian.plugin.webresource.transformer</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.plugins.rest.common.security))' extend='false' multiple='false' optional='false'>Import package com.atlassian.plugins.rest.common.security</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.renderer))' extend='false' multiple='false' optional='false'>Import package com.atlassian.renderer</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.renderer.v2))' extend='false' multiple='false' optional='false'>Import package com.atlassian.renderer.v2</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.renderer.v2.components))' extend='false' multiple='false' optional='false'>Import package com.atlassian.renderer.v2.components</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.renderer.v2.macro))' extend='false' multiple='false' optional='false'>Import package com.atlassian.renderer.v2.macro</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.renderer.v2.plugin))' extend='false' multiple='false' optional='false'>Import package com.atlassian.renderer.v2.plugin</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.sal.api))' extend='false' multiple='false' optional='false'>Import package com.atlassian.sal.api</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.sal.api.lifecycle))' extend='false' multiple='false' optional='false'>Import package com.atlassian.sal.api.lifecycle</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.sal.api.message))' extend='false' multiple='false' optional='false'>Import package com.atlassian.sal.api.message</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.sal.api.pluginsettings))' extend='false' multiple='false' optional='false'>Import package com.atlassian.sal.api.pluginsettings</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.sal.api.scheduling))' extend='false' multiple='false' optional='false'>Import package com.atlassian.sal.api.scheduling</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.sal.api.transaction))' extend='false' multiple='false' optional='false'>Import package com.atlassian.sal.api.transaction</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.sal.api.upgrade))' extend='false' multiple='false' optional='false'>Import package com.atlassian.sal.api.upgrade</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.sal.api.user))' extend='false' multiple='false' optional='false'>Import package com.atlassian.sal.api.user</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.security.auth.trustedapps))' extend='false' multiple='false' optional='false'>Import package com.atlassian.security.auth.trustedapps</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.spring.container))' extend='false' multiple='false' optional='false'>Import package com.atlassian.spring.container</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.templaterenderer))' extend='false' multiple='false' optional='false'>Import package com.atlassian.templaterenderer</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.upm.api.license))' extend='false' multiple='false' optional='false'>Import package com.atlassian.upm.api.license</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.upm.api.license.entity))' extend='false' multiple='false' optional='false'>Import package com.atlassian.upm.api.license.entity</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.upm.api.util))' extend='false' multiple='false' optional='false'>Import package com.atlassian.upm.api.util</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.user))' extend='false' multiple='false' optional='false'>Import package com.atlassian.user</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.velocity.htmlsafe))' extend='false' multiple='false' optional='false'>Import package com.atlassian.velocity.htmlsafe</require>
+    <require name='package' filter='(&amp;(package=com.google.common.base))' extend='false' multiple='false' optional='false'>Import package com.google.common.base</require>
+    <require name='package' filter='(&amp;(package=com.google.common.collect))' extend='false' multiple='false' optional='false'>Import package com.google.common.collect</require>
+    <require name='package' filter='(&amp;(package=com.k15t.js.angular))' extend='false' multiple='false' optional='false'>Import package com.k15t.js.angular</require>
+    <require name='package' filter='(&amp;(package=com.opensymphony.webwork))' extend='false' multiple='false' optional='false'>Import package com.opensymphony.webwork</require>
+    <require name='package' filter='(&amp;(package=javax.annotation))' extend='false' multiple='false' optional='false'>Import package javax.annotation</require>
+    <require name='package' filter='(&amp;(package=javax.crypto))' extend='false' multiple='false' optional='false'>Import package javax.crypto</require>
+    <require name='package' filter='(&amp;(package=javax.imageio))' extend='false' multiple='false' optional='false'>Import package javax.imageio</require>
+    <require name='package' filter='(&amp;(package=javax.imageio.metadata))' extend='false' multiple='false' optional='false'>Import package javax.imageio.metadata</require>
+    <require name='package' filter='(&amp;(package=javax.imageio.plugins.jpeg))' extend='false' multiple='false' optional='false'>Import package javax.imageio.plugins.jpeg</require>
+    <require name='package' filter='(&amp;(package=javax.imageio.stream))' extend='false' multiple='false' optional='false'>Import package javax.imageio.stream</require>
+    <require name='package' filter='(&amp;(package=javax.security.auth))' extend='false' multiple='false' optional='false'>Import package javax.security.auth</require>
+    <require name='package' filter='(&amp;(package=javax.servlet))' extend='false' multiple='false' optional='false'>Import package javax.servlet</require>
+    <require name='package' filter='(&amp;(package=javax.servlet.http))' extend='false' multiple='false' optional='false'>Import package javax.servlet.http</require>
+    <require name='package' filter='(&amp;(package=javax.swing))' extend='false' multiple='false' optional='false'>Import package javax.swing</require>
+    <require name='package' filter='(&amp;(package=javax.swing.border))' extend='false' multiple='false' optional='false'>Import package javax.swing.border</require>
+    <require name='package' filter='(&amp;(package=javax.swing.event))' extend='false' multiple='false' optional='false'>Import package javax.swing.event</require>
+    <require name='package' filter='(&amp;(package=javax.swing.plaf))' extend='false' multiple='false' optional='false'>Import package javax.swing.plaf</require>
+    <require name='package' filter='(&amp;(package=javax.swing.plaf.basic))' extend='false' multiple='false' optional='false'>Import package javax.swing.plaf.basic</require>
+    <require name='package' filter='(&amp;(package=javax.swing.table))' extend='false' multiple='false' optional='false'>Import package javax.swing.table</require>
+    <require name='package' filter='(&amp;(package=javax.swing.text))' extend='false' multiple='false' optional='false'>Import package javax.swing.text</require>
+    <require name='package' filter='(&amp;(package=javax.swing.tree))' extend='false' multiple='false' optional='false'>Import package javax.swing.tree</require>
+    <require name='package' filter='(&amp;(package=javax.ws.rs))' extend='false' multiple='false' optional='false'>Import package javax.ws.rs</require>
+    <require name='package' filter='(&amp;(package=javax.ws.rs.core))' extend='false' multiple='false' optional='false'>Import package javax.ws.rs.core</require>
+    <require name='package' filter='(&amp;(package=javax.ws.rs.ext))' extend='false' multiple='false' optional='false'>Import package javax.ws.rs.ext</require>
+    <require name='package' filter='(&amp;(package=javax.xml.bind))' extend='false' multiple='false' optional='false'>Import package javax.xml.bind</require>
+    <require name='package' filter='(&amp;(package=javax.xml.bind.annotation))' extend='false' multiple='false' optional='false'>Import package javax.xml.bind.annotation</require>
+    <require name='package' filter='(&amp;(package=javax.xml.datatype))' extend='false' multiple='false' optional='false'>Import package javax.xml.datatype</require>
+    <require name='package' filter='(&amp;(package=javax.xml.namespace))' extend='false' multiple='false' optional='false'>Import package javax.xml.namespace</require>
+    <require name='package' filter='(&amp;(package=javax.xml.parsers))' extend='false' multiple='false' optional='false'>Import package javax.xml.parsers</require>
+    <require name='package' filter='(&amp;(package=javax.xml.stream))' extend='false' multiple='false' optional='false'>Import package javax.xml.stream</require>
+    <require name='package' filter='(&amp;(package=javax.xml.stream.events))' extend='false' multiple='false' optional='false'>Import package javax.xml.stream.events</require>
+    <require name='package' filter='(&amp;(package=javax.xml.transform))' extend='false' multiple='false' optional='false'>Import package javax.xml.transform</require>
+    <require name='package' filter='(&amp;(package=javax.xml.transform.dom))' extend='false' multiple='false' optional='false'>Import package javax.xml.transform.dom</require>
+    <require name='package' filter='(&amp;(package=javax.xml.transform.sax))' extend='false' multiple='false' optional='false'>Import package javax.xml.transform.sax</require>
+    <require name='package' filter='(&amp;(package=javax.xml.transform.stream))' extend='false' multiple='false' optional='false'>Import package javax.xml.transform.stream</require>
+    <require name='package' filter='(&amp;(package=javax.xml.xpath))' extend='false' multiple='false' optional='false'>Import package javax.xml.xpath</require>
+    <require name='package' filter='(&amp;(package=net.sf.cglib.proxy))' extend='false' multiple='false' optional='false'>Import package net.sf.cglib.proxy</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.beanutils))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.beanutils</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.codec.binary))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.codec.binary</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.codec.digest))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.codec.digest</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.collections))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.collections</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.collections.comparators))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.collections.comparators</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.fileupload))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.fileupload</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.fileupload.disk))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.fileupload.disk</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.fileupload.servlet))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.fileupload.servlet</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.httpclient))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.httpclient</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.httpclient.methods))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.httpclient.methods</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.httpclient.params))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.httpclient.params</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.io))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.io</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.io.filefilter))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.io.filefilter</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.io.input))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.io.input</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.lang))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.lang</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.lang.exception))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.lang.exception</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.lang3))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.lang3</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.lang3.exception))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.lang3.exception</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.lang3.math))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.lang3.math</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.lang3.text.translate))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.lang3.text.translate</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.logging))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.logging</require>
+    <require name='package' filter='(&amp;(package=org.apache.velocity))' extend='false' multiple='false' optional='false'>Import package org.apache.velocity</require>
+    <require name='package' filter='(&amp;(package=org.apache.velocity.app))' extend='false' multiple='false' optional='false'>Import package org.apache.velocity.app</require>
+    <require name='package' filter='(&amp;(package=org.apache.velocity.context))' extend='false' multiple='false' optional='false'>Import package org.apache.velocity.context</require>
+    <require name='package' filter='(&amp;(package=org.apache.velocity.exception))' extend='false' multiple='false' optional='false'>Import package org.apache.velocity.exception</require>
+    <require name='package' filter='(&amp;(package=org.apache.velocity.runtime.log))' extend='false' multiple='false' optional='false'>Import package org.apache.velocity.runtime.log</require>
+    <require name='package' filter='(&amp;(package=org.apache.velocity.runtime.resource))' extend='false' multiple='false' optional='false'>Import package org.apache.velocity.runtime.resource</require>
+    <require name='package' filter='(&amp;(package=org.apache.velocity.runtime.resource.loader))' extend='false' multiple='false' optional='false'>Import package org.apache.velocity.runtime.resource.loader</require>
+    <require name='package' filter='(&amp;(package=org.apache.xerces.dom))' extend='false' multiple='false' optional='false'>Import package org.apache.xerces.dom</require>
+    <require name='package' filter='(&amp;(package=org.apache.xerces.parsers))' extend='false' multiple='false' optional='false'>Import package org.apache.xerces.parsers</require>
+    <require name='package' filter='(&amp;(package=org.dom4j))' extend='false' multiple='false' optional='false'>Import package org.dom4j</require>
+    <require name='package' filter='(&amp;(package=org.dom4j.io))' extend='false' multiple='false' optional='false'>Import package org.dom4j.io</require>
+    <require name='package' filter='(&amp;(package=org.dom4j.tree))' extend='false' multiple='false' optional='false'>Import package org.dom4j.tree</require>
+    <require name='package' filter='(&amp;(package=org.joda.time)(version&gt;=1.6.0))' extend='false' multiple='false' optional='false'>Import package org.joda.time;version=1.6</require>
+    <require name='package' filter='(&amp;(package=org.joda.time.format)(version&gt;=1.6.0))' extend='false' multiple='false' optional='false'>Import package org.joda.time.format;version=1.6</require>
+    <require name='package' filter='(&amp;(package=org.osgi.framework))' extend='false' multiple='false' optional='false'>Import package org.osgi.framework</require>
+    <require name='package' filter='(&amp;(package=org.slf4j))' extend='false' multiple='false' optional='false'>Import package org.slf4j</require>
+    <require name='package' filter='(&amp;(package=org.springframework.beans.factory.annotation))' extend='false' multiple='false' optional='false'>Import package org.springframework.beans.factory.annotation</require>
+    <require name='package' filter='(&amp;(package=org.springframework.beans.factory.config))' extend='false' multiple='false' optional='false'>Import package org.springframework.beans.factory.config</require>
+    <require name='package' filter='(&amp;(package=org.springframework.stereotype))' extend='false' multiple='false' optional='false'>Import package org.springframework.stereotype</require>
+    <require name='package' filter='(&amp;(package=org.springframework.util))' extend='false' multiple='false' optional='false'>Import package org.springframework.util</require>
+    <require name='package' filter='(&amp;(package=org.w3c.dom))' extend='false' multiple='false' optional='false'>Import package org.w3c.dom</require>
+    <require name='package' filter='(&amp;(package=org.w3c.dom.bootstrap))' extend='false' multiple='false' optional='false'>Import package org.w3c.dom.bootstrap</require>
+    <require name='package' filter='(&amp;(package=org.w3c.dom.css))' extend='false' multiple='false' optional='false'>Import package org.w3c.dom.css</require>
+    <require name='package' filter='(&amp;(package=org.w3c.dom.ls))' extend='false' multiple='false' optional='false'>Import package org.w3c.dom.ls</require>
+    <require name='package' filter='(&amp;(package=org.w3c.dom.ranges))' extend='false' multiple='false' optional='false'>Import package org.w3c.dom.ranges</require>
+    <require name='package' filter='(&amp;(package=org.w3c.dom.traversal))' extend='false' multiple='false' optional='false'>Import package org.w3c.dom.traversal</require>
+    <require name='package' filter='(&amp;(package=org.xml.sax))' extend='false' multiple='false' optional='false'>Import package org.xml.sax</require>
+    <require name='package' filter='(&amp;(package=org.xml.sax.ext))' extend='false' multiple='false' optional='false'>Import package org.xml.sax.ext</require>
+    <require name='package' filter='(&amp;(package=org.xml.sax.helpers))' extend='false' multiple='false' optional='false'>Import package org.xml.sax.helpers</require>
+  </resource>
+</repository>
