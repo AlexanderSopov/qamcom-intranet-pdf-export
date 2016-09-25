@@ -1,4 +1,4 @@
-var exec = require('child_process').exec;
+var exec 	= require('child_process').exec
 function puts(error, stdout, stderr) {
 	console.log('stdout: ' + stdout);
 	console.log('stderr: ' + stderr);
@@ -10,6 +10,6 @@ exec(
 	"org.xhtmlrenderer.simple.PDFRenderer "+
 	"export/CLEANED_32539763.xhtml "+
 	"test.pdf", {
-		cwd: "H:/TeddyBear/Qamcom/qamcom-intranet-pdf-export/workingDir/"
+		cwd: process.cwd() + "/workingDir/"
 	}, puts);
 //
