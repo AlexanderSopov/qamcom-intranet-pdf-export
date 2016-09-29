@@ -1,0 +1,26 @@
+body {
+    counter-reset: h1;
+}
+
+.wikicontent h1.section-heading:before {
+    content: counter(h1) " ";
+    counter-increment: h1;
+}
+
+.wikicontent h1.section-heading {
+    counter-reset: h2;
+}
+
+.wikicontent h2.section-heading:before {
+    content: counter(h1) "." counter(h2) " ";
+    counter-increment: h2;
+}
+
+.wikicontent h2.section-heading {
+    counter-reset: h3;
+}
+
+.wikicontent h3.section-heading:before {
+    content: counter(h1) "." counter(h2) "." counter(h3) " ";
+    counter-increment: h3;
+}

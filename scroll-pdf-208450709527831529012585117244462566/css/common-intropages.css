@@ -1,0 +1,68 @@
+/* The title page */
+.titlepage h1 {
+    border: none;
+    margin-top: 40mm;
+    font-size: 4em;
+}
+
+.titlepage h2 {
+    border: none;
+}
+
+
+
+/* The default toc page */
+ul.toc a::after {
+    content: leader(solid) target-counter(attr(href), page);
+}
+
+ul.toc {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul.toc li ul {
+    list-style-type: none;
+    padding-left: 3mm;
+}
+
+ul.toc li ul li ul {
+    list-style-type: none;
+    padding-left: 6mm;
+}
+
+ul.toc li ul li ul li ul {
+    list-style-type: none;
+    padding-left: 9mm;
+}
+
+ul.toc li {
+    /* Allow page breaks everywhere in the nested toc lists */
+	page-break-inside: auto;
+}
+
+
+
+/* The keyword index page */
+div.index-terms-container li {
+    list-style-type: none;
+}
+
+div.index-terms-container a.index-term-link:after {
+    content: target-counter(attr(href), page);
+}
+
+/* Top level index terms should not be indented */
+div.index-terms-container > ul {
+    padding-left: 0;
+}
+
+/* Other levels should be indented */
+div.index-terms-container li ul {
+    padding-left: 6mm;
+}
+
+div.index-terms-container li.index-terms-section-label {
+	margin-top: 1cm;
+	font-size: x-large;
+}

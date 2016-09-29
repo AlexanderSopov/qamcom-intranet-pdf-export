@@ -1,0 +1,22 @@
+/* Some common definitions, will be imported always.
+ * Definitions here need to be overwritten.
+ */
+
+/* <span class="page-number"/> */
+.page-number:after {
+    content: counter(page);
+}
+
+/* <span class="page-count"/> */
+.page-count:after {
+    content: counter(pages);
+}
+
+/* <div class="page-break"/> */
+.page-break {
+    page-break-before: always;
+}
+
+span.scroll-bookmark {
+    -fs-named-destination: create;
+}
