@@ -1,0 +1,11 @@
+/* This will add the url after links. */
+
+a.external-link.url-appendable:link:after,
+a.external-link.url-appendable:visited:after {
+    content: " ("attr(href)")";
+    font-size: 90%;
+}
+span.disabled-link.url-appendable:after {
+    content: " ("attr(data-href)")";
+    font-size: 90%;
+}
