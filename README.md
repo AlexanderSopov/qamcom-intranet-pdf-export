@@ -7,7 +7,7 @@
 
 ## import project:
 1. export a page from qamcom intranet
-2. ask Morten (or whoever's in charge at the time) to email you the pdf-XXXXXXX folder and "pdf-XXXXXXX.export" that are the latest in temp folder (read more here: )
+2. ask Morten (or whoever's in charge at the time) to email you the pdf-XXXXXXX folder and "pdf-XXXXXXX.export" that are the latest in temp folder (read more here: https://help.k15t.com/scroll-pdf-exporter/advanced-template-development-75367859.html)
 3. copy that folder and .export file into workingDir and rename them into export and export.export
 4. in "watcher.js", rename the filename variable to match the name of the file "CLEANED_XXXXXX.xhtml" that resides inside workingDir/export/
 
