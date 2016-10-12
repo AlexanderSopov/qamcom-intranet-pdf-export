@@ -16,7 +16,7 @@
 1. cd into repository root
 2. run command: npm run run
 3. in workingDir/export, edit the CLEANED_XXXXXX.xhtml file. The last "style" tag with "media='print'" is the css you'll want to change
-4. every time you save the file, watcher.js will run and if you have the pdf open in ex. chrome, you'll just need to update it to see your changes.
+4. every time you save the file, watcher.js will run and convert the .xhtml into workingDir/test.pdf. If you have the pdf opened in  chrome, you'll just need to update the page to see your changes. (OBSERVE! Some pdf-readers, like MS Edge will "occupy" the file, meaning you won't be able to make changes to it while it's opened, so I suggest you open it in chrome or try out different readers. Remember that the point is to automate development)
 
 
 ## export
