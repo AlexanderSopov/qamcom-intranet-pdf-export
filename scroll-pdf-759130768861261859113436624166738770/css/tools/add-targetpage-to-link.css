@@ -1,8 +1,0 @@
-/* This will add the page number after internal links.
- * NOTE: Currently not used, as this needs to be i18n'd, see
- *       src/main/resources/com/k15t/scroll/pdf/template/page.vm
- */
-
-a.document-link:after {
-    content: ' (Page ' target-counter(attr(href), page) ')';
-}
