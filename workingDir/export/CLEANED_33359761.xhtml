@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <title>Functional Description QR77mDev</title>
+    <bookmarks>
+      <bookmark name="Background" href="#src-33359761_FunctionalDescriptionQR77mDev-Background" />
+      <bookmark name="Radar Functionality" href="#src-33359761_FunctionalDescriptionQR77mDev-RadarFunctionality" />
+      <bookmark name="Technical Specification" href="#src-33359761_FunctionalDescriptionQR77mDev-TechnicalSpecification" />
+      <bookmark name="Development tools" href="#src-33359761_FunctionalDescriptionQR77mDev-Developmenttools" />
+    </bookmarks>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="generator" content="Scroll PDF Exporter" />
+    <style type="text/css" media="print">
+      @font-face {
+        font-family: TeXGyreTermes;
+        font-style: italic;
+        font-weight: bold;
+        src: url('fonts/TeXGyreTermes-italic-bold.otf');
+        -fs-pdf-font-embed: embed;
+        -fs-pdf-font-encoding: "Identity-H";
+      }
+
+      @font-face {
+        font-family: TeXGyreTermes;
+        font-style: normal;
+        font-weight: bold;
+        src: url('fonts/TeXGyreTermes-normal-bold.otf');
+        -fs-pdf-font-embed: embed;
+        -fs-pdf-font-encoding: "Identity-H";
+      }
+
+      @font-face {
+        font-family: TeXGyreTermes;
+        font-style: normal;
+        font-weight: normal;
+        src: url('fonts/TeXGyreTermes-normal-normal.otf');
+        -fs-pdf-font-embed: embed;
+        -fs-pdf-font-encoding: "Identity-H";
+      }
+
+      @font-face {
+        font-family: TeXGyreTermes;
+        font-style: italic;
+        font-weight: normal;
+        src: url('fonts/TeXGyreTermes-italic-normal.otf');
+        -fs-pdf-font-embed: embed;
+        -fs-pdf-font-encoding: "Identity-H";
+      }
+
+      @font-face {
+        font-family: Arial;
+        font-style: normal;
+        font-weight: bold;
+        src: url('fonts/Arial-normal-bold.ttf');
+        -fs-pdf-font-embed: embed;
+        -fs-pdf-font-encoding: "Identity-H";
+      }
+
+      @font-face {
+        font-family: Arial;
+        font-style: italic;
+        font-weight: bold;
+        src: url('fonts/Arial-italic-bold.ttf');
+        -fs-pdf-font-embed: embed;
+        -fs-pdf-font-encoding: "Identity-H";
+      }
+
+      @font-face {
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        src: url('fonts/Arial-normal-normal.ttf');
+        -fs-pdf-font-embed: embed;
+        -fs-pdf-font-encoding: "Identity-H";
+      }
+
+      @font-face {
+        font-family: Arial;
+        font-style: italic;
+        font-weight: normal;
+        src: url('fonts/Arial-italic-normal.ttf');
+        -fs-pdf-font-embed: embed;
+        -fs-pdf-font-encoding: "Identity-H";
+      }
+    /*</style>
+    <link rel="stylesheet" href="css/common-page.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="css/common-marginboxes.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="css/common-contentstyle.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="css/common-intropages.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="css/common-tools.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="css/tools/add-url-to-link.css" type="text/css" media="print" />*/
+    <style type="text/css" media="print">
+      @page {
+        size: 210mm 297mm;
+        margin: 20mm 14mm 18mm 14mm;
+        padding: 8mm;
+        @top-right {
+          vertical-align: bottom;
+          padding-bottom: 0.5mm;
+          content: element(default-top-right);
+        }
+        @bottom-right {
+          vertical-align: top;
+          padding-top: 0.5mm;
+          content: element(default-bottom-right);
+        }
+        @bottom-left {
+          vertical-align: top;
+          padding-top: 0.5mm;
+          content: element(default-bottom-left);
+        }
+        @top-left {
+          vertical-align: bottom;
+          padding-bottom: 0.5mm;
+          content: element(default-top-left);
+        }
+        @bottom-center {
+          vertical-align: top;
+          padding-top: 0.5mm;
+          content: element(default-bottom-center);
+        }
+        @top-center {
+          vertical-align: bottom;
+          padding-bottom: 0.5mm;
+          content: element(default-top-center);
+        }
+      }
+    </style>
+    <style type="text/css">
+      /* ----------------- Overall Formatting -----------------*/
+      div.default-bottom-left-margin-box {
+        width: 16mm;
+      }
+
+      div.default-bottom-center-margin-box {
+        width: 150mm;
+        text-align: center;
+      }
+
+      div.default-bottom-right-margin-box {
+        width: 16mm;
+        text-align: right;
+      }
+
+      div.default-top-left-margin-box {
+        width: 72mm;
+        margin-left: 8mm;
+      }
+
+      div.default-top-center-margin-box {
+        width: 22mm;
+        text-align: center;
+      }
+
+      div.default-top-right-margin-box {
+        width: 72mm;
+        text-align: right;
+      }
+
+      .default-top-right-margin-box {
+        font-family: TeXGyreTermes;
+        font-weight: normal;
+        text-align: right;
+        margin-bottom: 3mm;
+        font-size: 9pt;
+      }
+
+      .default-bottom-left-margin-box {
+        font-family: TeXGyreTermes;
+        font-weight: normal;
+        font-size: 9pt;
+        line-height: 12pt;
+        color: #203965;
+        margin-top: 5mm;
+      }
+
+      .default-bottom-center-margin-box {
+        font-family: TeXGyreTermes;
+        font-weight: normal;
+        text-align: center;
+        font-size: 9pt;
+        line-height: 12pt;
+        color: #203965;
+        margin-top: 3mm;
+      }
+
+      .default-bottom-right-margin-box {
+        font-family: TeXGyreTermes;
+        font-weight: normal;
+        font-size: 9pt;
+        line-height: 12pt;
+        color: #203965;
+        margin-top: 5mm;
+      }
+
+      h1 {
+        font-family: TeXGyreTermes;
+        font-weight: bold;
+        font-size: 25pt;
+        color: #203965;
+        margin-top: 5mm;
+        margin-bottom: 5mm;
+        border-bottom: 1px solid #919699;
+      }
+
+      h2 {
+        font-family: TeXGyreTermes;
+        font-weight: normal;
+        font-size: 18pt;
+        color: #203965;
+        margin-top: 3mm;
+        margin-bottom: 2mm;
+        padding: 0mm;
+        border-bottom: none;
+        border-bottom: 1px solid #919699;
+      }
+
+      h3 {
+        font-family: TeXGyreTermes;
+        font-weight: normal;
+        font-style: italic;
+        font-size: 13pt;
+        color: #203965;
+        padding: 0mm;
+        margin-top: 4mm;
+        margin-bottom: 2mm;
+        border-bottom: none;
+      }
+
+      h4,
+      h5,
+      h6 {
+        font-family: TeXGyreTermes;
+        font-weight: normal;
+        font-size: 12pt;
+        line-height: 15pt;
+        color: #203965;
+        margin-top: 0mm;
+        margin-bottom: 2mm;
+      }
+
+      p {
+        font-family: TeXGyreTermes;
+        font-weight: normal;
+        margin-top: 0mm;
+        margin-bottom: 2mm;
+      }
+
+      a:link,
+      a:visited {
+        color: #003267;
+      }
+      /* ----------------- Content ----------------------------*/
+      .title{
+        width:102%;
+        margin-top: 10mm;
+        margin-bottom: 10mm;
+      }
+      .title img{
+        width: 100%;
+      }
+      .background{
+        page-break-after: always;
+      }
+      .tech-spec{
+        width:100%;
+        page-break-before:always;
+      }
+      .title > h1{
+        border-bottom:none;
+        margin-bottom: 0px;
+        font-size: 36pt;
+      }
+      .title  h2{
+        font-size: 15pt;
+        margin-top:0mm;
+        padding-bottom:3mm;
+      }
+      .tech-spec > .col-2{
+        width: 47.5%;
+        display: inline-block;
+        float: left;
+        margin-top:7mm;
+        overflow:hidden;
+      }
+      .tech-spec > h1 {
+          width: 99.3%;
+      }
+      .tech-spec > .col-2 > .spec-img{
+        width: 101%;
+        margin-bottom: 7mm;
+      }
+      .spec-img img{
+        width: 100%;
+      }
+      .tech-spec .left{
+        padding-right:3.5mm;
+      }
+      .tech-spec .right{
+          padding-left:3.5mm;
+      }
+      .right > table{
+        width:100%;
+      }
+      .left td:nth-child(1){
+        width:35%;
+      }
+
+      .right td:nth-child(1){
+        width:50%;
+      }
+      td:nth-child(2){
+        text-align: right;
+      }
+      td ul{
+        margin: 0px;
+        list-style:none;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="default-top-right-margin-box margin-box" style="position:running(default-top-right);text-align: right;">Page <span class="page-number" /> of <span class="page-count" /></div>    <div class="default-bottom-right-margin-box margin-box" style="position:running(default-bottom-right);text-align: right;"> </div>    <div class="default-bottom-left-margin-box margin-box" style="position:running(default-bottom-left);"> </div>
+    <div class="default-top-left-margin-box margin-box" style="position:running(default-top-left);"><img height="30" src="qamcom_logo_300x60.gif" /></div>
+    <div class="default-bottom-center-margin-box margin-box" style="position:running(default-bottom-center);text-align: center;">
+      <p> Qamcom Research &amp; Technology AB | Falkenbergsgatan 3, 412 85 Göteborg | Tel: +46 31 721 17 30 <br/> E-mail: info@qamcom.se | Org. nr: 556795-8003 </p>
+    </div>
+    <div class="default-top-center-margin-box margin-box" style="position:running(default-top-center);text-align: center;"> </div><div class="content intro-page section-1" style="page-break-before: avoid;">    </div>    <div class="content intro-page section-1">    </div>
+    <div class="content wikicontent section-1 content new-page-section" id="src-33359761">
+      <div class="title">
+        <h1>QR77mDev</h1>
+        <h2>Product Specification</h2>
+        <div class="head-img">
+          <img class="inline-image confluence-embedded-image" src="images/download/attachments/33359761/QR77mdev_1.png" alt="images/download/attachments/33359761/QR77mdev_1.png" />
+        </div>
+      </div>
+      <div class="background">
+        <h2 class="heading section-heading"><span id="src-33359761_FunctionalDescriptionQR77mDev-Background">Background</span></h2>
+
+
+        <p>QR77mDev is a development system for radar based vehicle safety, driver assistance and autonomous vehicle systems.
+        </p>
+      </div>
+      <div class="functionality">
+        <h2 class="heading section-heading"><span id="src-33359761_FunctionalDescriptionQR77mDev-RadarFunctionality">Radar Functionality</span></h2>
+
+        <p>The radar performs measurements with an update rate of 25Hz. Hence; every 40ms the radar transmits information about the 100 most significant objects (largest amplitude). Each object is described by:
+        </p>
+        <ul class="">
+          <li class="">
+            <p>Range [m]: distance in meter between the radar and the object.
+            </p>
+          </li>
+          <li class="">
+            <p>Range rate [m/s]: change rate in meter per second.
+            </p>
+          </li>
+          <li class="">
+            <p>Azimuth [deg]: angle (in the horizontal plane) between the radar longitudinal orientation axle and the object.
+            </p>
+          </li>
+          <li class="">
+            <p>Elevation [deg]: angle (in the vertical plane) between the radar vertical orientation axle and the object.
+            </p>
+          </li>
+          <li class="">
+            <p>Amplitude: a measure reflecting the magnitude of the radar detection.
+            </p>
+          </li>
+          <li class="">
+            <p>Signal-to-noise ratio: a dimensionless measure reflecting the magnitude of the radar detection in relation to the magnitude of the surrounding range/Doppler bins.
+            </p>
+          </li>
+          <li class="">
+            <p>isValid: Boolean reflecting the validity of the detection.
+            </p>
+          </li>
+        </ul>
+        <p>The radar detections are not tracked/filtered; only the raw detections are listed.
+        </p>
+        <p>The maximum useful range for the radar is at least 100m. The minimum unambiguous Doppler-velocity range is 2*[-40, 40] m/s.
+        </p>
+        <p>The radar produces unbiased estimates of the range, range-rate, azimuth, and elevation on a moving platform up to 40m/s and yaw-rates up to 15 deg/sec. (This requires that the radar get information about the vehicle longitudinal velocity and the
+          vehicle yaw-rate together with the geometry for the radar position in relation to the vehicle attached coordinate system used to compute the longitudinal velocity and the vehicle yaw-rate. The vehicle lateral velocity may be assumed to be negligible.)
+        </p>
+      </div>
+      <div class="dev-tool">
+        <h2 class="heading section-heading"><span id="src-33359761_FunctionalDescriptionQR77mDev-Developmenttools">Development tools</span></h2>
+
+        <p>The development system includes the following supporting tools:
+        </p>
+        <ul class="">
+          <li class="">
+            <p>a data logging tool which produces files that can be loaded in e.g. Matlab.
+            </p>
+          </li>
+          <li class="">
+            <p>a real-time tool for overlaying and visualizing the stream of radar detections on video from a camera aligned with the radar
+            </p>
+          </li>
+          <li class="">
+            <p>a time-stamp of the capture time of the transmitted radar data
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="tech-spec">
+        <h1>Technical Specification</h1>
+        <div class="col-2 left">
+          <div class="spec-img">
+            <img src="images/download/attachments/33359761/QR77mdev_2.png" alt="images/download/attachments/33359761/QR77mdev_2.png"/>
+          </div>
+          <table>
+            <tbody class="">
+              <tr>
+                <td colspan="1" rowspan="1" class="confluenceTd">
+                  <h4 class="heading" id="src-33359761_FunctionalDescriptionQR77mDev-Area"><span>Area</span></h4>
+                </td>
+                <td colspan="1" rowspan="1" class="confluenceTd">
+                  <h4 class="heading" id="src-33359761_FunctionalDescriptionQR77mDev-Data"><span>Data</span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="1" rowspan="1" class="confluenceTd">
+                  <p>Frequency range (selectable)
+                  </p>
+                </td>
+                <td colspan="1" rowspan="1" class="confluenceTd">
+
+                  <p>76 GHz to 79 GHz
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="1" rowspan="1" class="confluenceTd">
+
+                  <p>Angular beam coverage
+                  </p>
+                </td>
+                <td colspan="1" rowspan="1" class="confluenceTd">
+
+                  <p>Azimuth ± 45 @ 6dB two way
+                    <br clear="none" />Elevation ± 15 @ 6dB two way
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="1" rowspan="1" class="confluenceTd">
+
+                  <p>Unambiguous angular coverage at receive
+                  </p>
+                </td>
+                <td colspan="1" rowspan="1" class="confluenceTd">
+
+                  <p>Azimuth ± 50
+                    <br clear="none" />Elevation ± 20
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="1" rowspan="1" class="confluenceTd">
+
+                  <p>Angular resolution
+                  </p>
+                </td>
+                <td colspan="1" rowspan="1" class="confluenceTd">
+
+                  <p>Azimuth 5 mrad @ 20 dB SNR
+                    <br clear="none" />Elevation 10 mrad @ 20 dB SNR
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="1" rowspan="1" class="confluenceTd">
+
+                  <p>Unambiguous range
+                  </p>
+                </td>
+                <td colspan="1" rowspan="1" class="confluenceTd">
+
+                  <p>125 m
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="1" rowspan="1" class="confluenceTd">
+
+                  <p>Unambiguous speed
+                  </p>
+                </td>
+                <td colspan="1" rowspan="1" class="confluenceTd">
+
+                  <p>±50 m/s (Depending on Waveform selected)
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-2 right">
+          <table>
+            <tbody>
+              <tr>
+                <td colspan="1" rowspan="1" class="confluenceTd">
+                  <h4 class="heading" id="src-33359761_FunctionalDescriptionQR77mDev-Area"><span>Area</span></h4>
+                </td>
+                <td colspan="1" rowspan="1" class="confluenceTd">
+                  <h4 class="heading" id="src-33359761_FunctionalDescriptionQR77mDev-Data"><span>Data</span></h4>
+                </td>
+              </tr>
+               <tr>
+                 <td colspan="1" rowspan="1" class="confluenceTd">
+
+                   <p>Max range resolution
+                   </p>
+                 </td>
+                 <td colspan="1" rowspan="1" class="confluenceTd">
+
+                   <p>0.1 m @ 20 dB SNR
+                   </p>
+                 </td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1" class="confluenceTd">
+
+                   <p>Max. speed resolution
+                   </p>
+                 </td>
+                 <td colspan="1" rowspan="1" class="confluenceTd">
+
+                   <p>0.2 m/s @ 20 dB SNR
+                   </p>
+                 </td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1" class="confluenceTd">
+
+                   <p>Update rates
+                   </p>
+                 </td>
+                 <td colspan="1" rowspan="1" class="confluenceTd">
+
+                   <p>20 Hz
+                   </p>
+                 </td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1" class="confluenceTd">
+
+                   <p>Cycle time
+                   </p>
+                 </td>
+                 <td colspan="1" rowspan="1" class="confluenceTd">
+
+                   <p>50 ms
+                   </p>
+                 </td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1" class="confluenceTd">
+
+                   <p>Number of detected objects (raw detections)
+                   </p>
+                 </td>
+                 <td colspan="1" rowspan="1" class="confluenceTd">
+
+                   <p>64
+                   </p>
+                 </td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1" class="confluenceTd">
+
+                   <p>Outputted parameters per each detection
+                   </p>
+                 </td>
+                 <td colspan="1" rowspan="1" class="confluenceTd">
+                   <ul class="">
+                     <li class="">
+                       <p>Range (m)
+                       </p>
+                     </li>
+                     <li class="">
+                       <p>Range rate (m/s)
+                       </p>
+                     </li>
+                     <li class="">
+                       <p>Azimuth (deg)
+                       </p>
+                     </li>
+                     <li class="">
+                       <p>Elevation (deg)
+                       </p>
+                     </li>
+                     <li class="">
+                       <p>Amplitude
+                       </p>
+                     </li>
+                     <li class="">
+                       <p>SNR
+                       </p>
+                     </li>
+                     <li class="">
+                       <p>isValid
+                       </p>
+                     </li>
+                   </ul>
+                 </td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1" class="confluenceTd">
+
+                   <p>Interfaces
+                   </p>
+                 </td>
+                 <td colspan="1" rowspan="1" class="confluenceTd">
+                   <ul class="">
+                     <li class="">
+                       <p>1pcs USB3
+                       </p>
+                     </li>
+                   </ul>
+                 </td>
+               </tr>
+               <tr>
+                 <td colspan="1" rowspan="1" class="confluenceTd">
+
+                   <p>Size, Approximately
+                   </p>
+                 </td>
+                 <td colspan="1" rowspan="1" class="confluenceTd">
+
+                   <p>205x150x75 (mm)
+                   </p>
+                 </td>
+               </tr>
+             </tbody>
+           </table>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+
+  </html>
